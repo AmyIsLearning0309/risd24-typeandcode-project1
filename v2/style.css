@@ -30,6 +30,12 @@ body {
   margin-right: 40px;
 }
 
+ .last {
+  margin-left: 350px;
+  width: 1000px;
+  text-align: left;
+ }
+
  a:link {
   color: black;
   background-color: transparent;
@@ -50,6 +56,18 @@ a:hover {
   margin-top: 15px;
   padding: 20px 20px 20px 20px;
 }
+
+.marquee {
+  position: absolute;
+  width:300px;
+  height:650px;
+  margin-top: 750px;
+  margin-right: 300px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .text-block {
   padding: 20px 20px 20px 20px;
   background-color: rgb(247, 221, 173);
@@ -84,6 +102,7 @@ a:hover {
   font-size: 300%;
   margin-left: 350px;
 }
+
 .content {
   margin: 50px 300px 50px 80px;
   font-weight: 500;
@@ -104,4 +123,8 @@ a:hover {
   margin: 0 auto;
   border-spacing: 40px; 
   background-color: rgb(198, 185, 213);
+}
+
+.return {
+  text-decoration: underline dashed;
 }

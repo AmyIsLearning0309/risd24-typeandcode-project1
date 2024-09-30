@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 87vw;
+    height: 100vh;
+}
+
+.flex-child {
+    flex-grow: 1;
+    background-color: rgb(224, 255, 222);
+    text-align: left;
+    padding: 20px 30px 30px 20px;
+    transition: flex-grow .5s;
+}
+
+.flex-child:hover {
+    flex-grow: 10;
+}
+
+.grandflex-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grandflex-child {
+    flex-grow: 1;
+    background-color: rgb(224, 255, 222);
+    text-align: left;
+    padding: 20px 30px 20px 20px;
+}
+
+.grandflex-child:hover {
+    flex-grow: 2;
+}
+
+.grandparent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 20px;
+    padding: 20px;
+    width: 100vw;
+}
+
+.grid-content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    padding: 20px 30px 30px 30px;
+    width: 100vw;
+}
+
+.grid-content2 div {
+    height: 500px;
+}
+
+.grid-picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-picture2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 30px 30px 30px;
+    width: 100vw;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(224, 255, 222);
+}
+
+.nav-bar div {
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-parent div {
+    background-color: rgb(255, 255, 255);
+    height: 80 px;
+    border: 10 px solid black;
+}
+
+.nav-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-parent div {
+    background-color: rgb(224, 255, 222);
+    height: 80 px;
+}
+
+.nav-content {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(224, 255, 222);
+}
+
+.nav-content div {
+    height: 60px;
+}
+
+a:any-link {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+  
+  a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+  }
+  
+.myDIV:hover + .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+  }
+
+
+.picture:focus + .hide {
+    display: block;
+ }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: 0 auto;
+    text-transform: uppercase;
+}      
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: 0 auto;
+    text-transform: uppercase;
+}
+
+p {
+    padding-bottom: 10px;
+    font-size:18px;
+}

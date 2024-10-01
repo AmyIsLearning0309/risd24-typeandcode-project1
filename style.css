@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(243, 144, 160);
+}
+
+body {
+    background-color: rgb(255, 192, 203);
+    transition: background-color 1s;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    transition: background-color 1s;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-color: rgb(189, 224, 255);
+        h1 {
+            font-size: 50px;
+            color: rgb(189, 224, 255);
+        }
+        * {
+            color: rgb(189, 224, 255);
+        }
+    }
+}
+
+
+@media only screen and (min-width: 950px) {
+    body {
+        background-color: rgb(245, 197, 255);
+        h1 {
+            font-size: 150px;
+            color: rgb(245, 197, 255);
+        }
+        * {
+            color: rgb(245, 197, 255);
+        }
+    }
+}
+
+h1 {
+    font-size: 100px;
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 20px;
+    padding: 20px 30px 30px 30px;
+    width: 100vw;
+}
+
+.grid2 div {
+    height: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 30px 30px 30px;
+    width: 100vw;
+}
+
+.grid div {
+    height: 40px;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-child {
+    flex-grow: 1;
+    text-align: left;
+    padding: 20px 30px 30px 20px;
+    transition: flex-grow .5s;
+    background-color: rgb(224, 255, 222);
+}
+
+.flex-child:hover {
+    flex-grow: 10;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}

@@ -8,10 +8,10 @@
 .flex-parent {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding: 10px;
+    gap: 20px;
+    padding-right: 20px;
     background-color: rgb(255, 255, 255);
-    width: 87vw;
+    width: auto;
     height: 100vh;
 }
 
@@ -27,13 +27,25 @@
     flex-grow: 10;
 }
 
+.flex-child1 {
+    flex-grow: 1;
+    background-color: rgb(224, 255, 222);
+    text-align: left;
+    padding: 20px 30px 30px 20px;
+    transition: flex-grow .5s;
+}
+
+.flex-child1:hover {
+    flex-grow: 10;
+}
+
 .grandflex-parent {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 0px 10px 10px 10px;
     background-color: rgb(255, 255, 255);
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
 }
 
@@ -72,7 +84,7 @@
 }
 
 .grid-content2 div {
-    height: 700px;
+    height: auto;
 }
 
 .grid-picture {
@@ -123,12 +135,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
 }
 
 .nav-parent div {
     background-color: rgb(224, 255, 222);
-    height: 80 px;
+    height: 1.3em;
 }
 
 .nav-content {
@@ -148,24 +159,29 @@ a:any-link {
     text-decoration: underline;
 }
   
-  a:hover {
+a:hover {
     color: green;
     text-decoration: underline;
 }
 
 .hide {
     display: none;
-  }
+}
   
-.myDIV:hover + .hide {
+.flex-child1:hover .hide {
     display: block;
     color: rgb(0, 0, 0);
-  }
+}
+
+.grandflex-child:hover .hide {
+    display: block;
+    color: rgb(0, 0, 0);
+}
 
 
 .picture:focus + .hide {
     display: block;
- }
+}
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -201,4 +217,65 @@ h4 {
 p {
     padding-bottom: 10px;
     font-size:18px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-parent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .nav-bar {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 7em;
+        padding: .5em;
+    }
+    .grandparent{
+        grid-template-columns: 1fr;
+    }
+    .nav-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 6em;
+        width: 95vw;
+    }
+    h4 {
+        font-size: .7em;
+    }
+    h3 {
+        font-size: .8em !important;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .grid-content {
+        grid-template-columns: 1fr;
+    }
+    .flex-parent {
+        display: flex;
+        flex-direction: column;
+    } 
+    .flex-child1 {
+        width: 95vw;
+    }
+    .grid-picture {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    p {
+        font-size: 10px !important;
+    }
+    .grid-picture2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-content2 {
+        grid-template-columns: 1fr;
+        width: 80vw;
+    }
 }

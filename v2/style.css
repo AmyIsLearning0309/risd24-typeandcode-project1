@@ -19,24 +19,24 @@ body {
 
  .nav-bar {
   border: 2px solid rgb(114, 74, 143);
-  width: 200px;
+  width: 13vw;
   height: 50px;
   text-align: center;
   line-height: 200%;
   vertical-align: top;
   border-spacing: 10px 10px;
   float: right;
-  margin-top: 50px;
-  margin-right: 40px;
+  margin-top: 5%;
+  margin-right: 4%;
 }
 
- .last {
-  margin-left: 350px;
-  width: 1000px;
+.last {
+  margin-left: 35%;
+  width: 80vw;
   text-align: left;
- }
+}
 
- a:link {
+a:link {
   color: black;
   background-color: transparent;
   text-decoration: none;
@@ -51,40 +51,39 @@ a:hover {
 .color-block {
   background-color: rgba(96, 43, 96, 0.65);
   position: absolute;
-  width:300px;
+  width:17vw;
   height:650px;
-  margin-top: 15px;
-  padding: 20px 20px 20px 20px;
+  margin-top: 3%;
+  padding: 20px;
 }
 
 .marquee {
   position: absolute;
   width:300px;
   height:650px;
-  margin-top: 750px;
-  margin-right: 300px;
-  padding: 10px 10px 10px 10px;
+  margin-top: 43%;
+  margin-right: 30%;
+  padding: 10px;
   font-size: 20px;
   font-weight: 600;
 }
 
 .text-block {
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   background-color: rgb(247, 221, 173);
-  width: 1400px;
+  width: 75vw;
   float: right;
-  margin-left: 300px;
-  margin-top: 15px;
+  margin-left: 20%;
+  margin-top: 2%;
   text-align: justify;
-  
 }
 
 .next-block {
   padding: 20px 20px 20px 20px;
   background-color: rgb(247, 224, 147);
-  width: 1750px;
+  width: 90vw;
   float: right;
-  margin-left: 300px;
+  margin-left: 25%;
   text-align: justify;
   
 }
@@ -100,7 +99,7 @@ a:hover {
   text-emphasis-style: double-circle;
   font-weight: 1000;
   font-size: 300%;
-  margin-left: 350px;
+  margin-left: 30%;
 }
 
 .content {
